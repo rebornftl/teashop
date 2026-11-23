@@ -7,14 +7,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://wsrv.nl" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Golos+Text:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&text=%E8%8C%B6%E7%86%9F%E7%94%9F%E6%99%AE%E6%B4%B1%E5%A4%A7%E7%BA%A2%E8%A2%8D%E9%93%81%E8%A7%82%E9%9F%B3%E7%99%BD%E9%BB%84%E4%BD%B3%E5%8F%B6%E9%BE%99%E4%BA%95%E5%85%AD%E5%A0%A1%E8%80%81&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bg" aria-hidden="true"><div class="bl" id="bga"></div><div class="bl" id="bgb"></div><div class="veil"></div></div>
 <div class="wrap">
- <div class="top"><button class="pill" id="back" hidden>← Назад</button><span class="mute" id="cnt" style="font-size:14px"></span></div>
+ <header class="top">
+  <div class="tl"><button class="pill g" id="back" hidden>Назад</button><span class="brand">茶 Чайная подборка</span></div>
+  <div class="tr"><label class="clar">Стекло<input type="range" id="clar" min="0" max="100" value="55" aria-label="Прозрачность стекла"></label><span id="cnt"></span></div>
+ </header>
  <div class="bar"><i id="bar"></i></div>
- <main id="stage" aria-live="polite"></main>
+ <main id="stage"></main>
 </div>
 <script src="app.js" defer></script>
 </body>
